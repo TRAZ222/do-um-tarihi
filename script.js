@@ -1,4 +1,3 @@
-// **DOĞRU TARİH AYARI**
 const DOGRU_TARIH = "2006-03-10"; 
 
 function tarihiKontrolEt() {
@@ -6,7 +5,7 @@ function tarihiKontrolEt() {
     const gizliMesajAlani = document.getElementById("gizliMesajAlani");
     const hataMesajiAlani = document.getElementById("hataMesaji");
     const anaBaslik = document.getElementById("anaBaslik"); 
-    const romantikEfektAlani = document.getElementById("romantikEfekt"); // Yeni alan
+    const romantikEfektAlani = document.getElementById("romantikEfekt"); 
 
     hataMesajiAlani.textContent = "";
     gizliMesajAlani.style.display = 'none';
@@ -27,7 +26,7 @@ function tarihiKontrolEt() {
         gizliMesajAlani.style.display = 'block'; 
         document.body.style.background = 'linear-gradient(to right, #a18cd1, #fbc2eb)'; 
         
-        // **ROMANTİK EFEKTİ BAŞLAT**
+        // ROMANTİK EFEKTİ BAŞLAT
         kalpleriSac(romantikEfektAlani); 
 
     } else {
@@ -36,8 +35,10 @@ function tarihiKontrolEt() {
     }
 }
 
+// =========================================================
+// **YENİ ANİMASYON FONKSİYONU BAŞLANGICI**
+// =========================================================
 
-// **YENİ ANİMASYON FONKSİYONU**
 function kalpleriSac(alan) {
     const semboller = ['💖', '🌹', '✨', '💐', '❤️'];
     const adet = 40; // Saçılacak parça sayısı
