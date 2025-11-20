@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Hafif mor-mavi gradyan */
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+input[type="date"] {
+    padding: 12px 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+    font-size: 1.1em;
+    width: calc(100% - 36px); 
+    max-width: 300px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #6a05ad; /* Mor buton */
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #8c2ad8;
+    transform: translateY(-2px);
+}
+
+.gizli {
+    display: none; /* Başlangıçta gizli olacak */
+    margin-top: 30px;
+    padding: 25px;
+    border: 2px solid #007bff; /* Mavi çerçeve */
+    background-color: #e6f2ff; /* Açık mavi arka plan */
+    border-radius: 10px;
+    color: #007bff;
+}
+
+.gizli h2 {
+    color: #0056b3;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.hata-mesaji {
+    color: #e74c3c; /* Kırmızı hata mesajı */
+    margin-top: 20px;
+    font-weight: bold;
+}
