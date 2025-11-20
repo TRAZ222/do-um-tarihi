@@ -1,3 +1,5 @@
+// **DOĞRU TARİH AYARI**
+// Doğru tarih 10 Mart 2006 (YYYY-MM-DD formatında)
 const DOGRU_TARIH = "2006-03-10"; 
 
 function tarihiKontrolEt() {
@@ -11,7 +13,7 @@ function tarihiKontrolEt() {
     hataMesajiAlani.textContent = "";
     gizliMesajAlani.style.display = 'none';
     
-    // Kullanıcının girdiği tarihi al
+    // Kullanıcının girdiği değeri al
     const girilenTarih = girilenTarihElementi.value;
 
     if (girilenTarih === "") {
@@ -21,7 +23,7 @@ function tarihiKontrolEt() {
 
     // Doğru tarihi kontrol etme
     if (girilenTarih === DOGRU_TARIH) {
-        // Doğruysa: Gizli mesajı göster
+        // DOĞRU İSE: Gizli mesajı göster
         anaBaslik.style.display = 'none'; 
         girilenTarihElementi.style.display = 'none'; 
         document.querySelector('button').style.display = 'none'; 
@@ -29,7 +31,12 @@ function tarihiKontrolEt() {
         gizliMesajAlani.style.display = 'block'; 
         document.body.style.background = 'linear-gradient(to right, #a18cd1, #fbc2eb)'; 
     } else {
-        // Yanlışsa: Hata mesajını göster
-        hataMesajiAlani.textContent = "Üzgünüm, girdiğiniz tarih doğru değil. Bu mesajı sadece özel biri görebilir.";
+        // YANLIŞ İSE: Mesajı "Sayfadan Çık" olarak göster
+        hataMesajiAlani.textContent = "Sayfadan Çık"; // BURASI DEĞİŞTİ!
+        
+        // Opsiyonel: Yanlışsa formu gizleyebiliriz
+        // anaBaslik.style.display = 'none'; 
+        // girilenTarihElementi.style.display = 'none'; 
+        // document.querySelector('button').style.display = 'none'; 
     }
 }
