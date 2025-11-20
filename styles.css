@@ -75,3 +75,9 @@ button:hover {
     margin-top: 20px;
     font-weight: bold;
 }
+/* ROMANTİK ANİMASYON İÇİN YENİ CSS */
+.dusme-animasyonu {
+    /* Kalplerin ekranda kalmasını ve yumuşak görünmesini sağlar */
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Kalbe hafif bir parlaklık verir */
+}
